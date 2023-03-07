@@ -5,9 +5,11 @@ public class App {
 
     
     Lista obj1 = new Lista();
-    Lista obj2 = new Lista();
      obj1.Task1();
-     obj2.Task2();
+     obj1.Task2();
+     obj1.Task3();
+     obj1.Task4();
+     obj1.Task5();
 }
 }    
 

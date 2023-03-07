@@ -1,4 +1,4 @@
-import CalcularVelocidade2;
+import Operadores;
 
 package Operadores;
 public class App { public static void main(String[] args) {

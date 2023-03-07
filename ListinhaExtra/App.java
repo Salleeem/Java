@@ -1,7 +1,13 @@
 package ListinhaExtra;
 
 public class App {
-    Lista obj1 = new Lista();
+    public static void main(String[] args){
 
     
+    Lista obj1 = new Lista();
+    Lista obj2 = new Lista();
+     obj1.Task1();
+     obj2.Task2();
 }
+}    
+

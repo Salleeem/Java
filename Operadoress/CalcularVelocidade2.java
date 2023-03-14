@@ -1,4 +1,5 @@
-package Operadores;
+package Operadoress;
+
 import java.util.Scanner;
 
 public class CalcularVelocidade2 {
@@ -23,9 +24,7 @@ public class CalcularVelocidade2 {
         System.out.println("Informe o destino");
         String destino = sc.next();
         System.out.println("Sua viagem é de "
-        + origem + " até " + destino);
-
-
+                + origem + " até " + destino);
 
     }
 }

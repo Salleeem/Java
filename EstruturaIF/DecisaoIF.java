@@ -28,13 +28,12 @@ public class DecisaoIF {
         System.out.println("Informe o preço do produto");
         double valorProduto = sc.nextDouble();
         double desconto;
-        if (valorProduto>=200){
+        if (valorProduto >= 200) {
             desconto = 10.0;
-        }
-        else if (valorProduto>=100){
-        desconto = 5.0;}
-        else {
-        desconto = 0.0;
+        } else if (valorProduto >= 100) {
+            desconto = 5.0;
+        } else {
+            desconto = 0.0;
         }
         Double valorDesconto = valorProduto * desconto / 100;
         double valorFinal = valorProduto - valorDesconto;

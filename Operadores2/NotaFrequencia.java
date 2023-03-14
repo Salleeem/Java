@@ -21,7 +21,7 @@ public class NotaFrequencia {
         int frequenciaAluno = sc.nextInt();
         Boolean frequenciaAprovada = frequenciaAluno >= 75;
         System.out.println("O aluno está aprovado por Frequência? " + frequenciaAprovada);
-        Boolean resultadoFinal = (mediaAprovada==true) && (frequenciaAprovada==true);
-        System.out.println("O aluno esta aprovado no curso? " +resultadoFinal);
+        Boolean resultadoFinal = (mediaAprovada == true) && (frequenciaAprovada == true);
+        System.out.println("O aluno esta aprovado no curso? " + resultadoFinal);
     }
 }

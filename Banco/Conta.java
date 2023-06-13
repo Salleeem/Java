@@ -1,6 +1,12 @@
 package Banco;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 public abstract class Conta {
+  
+
     int nconta;
     String nome;
     double saldo;
@@ -23,6 +29,25 @@ public abstract class Conta {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
+
+    //Métodos
+
+    public void saque(){
+        double saldo;
+        double vSaque=Integer.parseInt(JOptionPane.showInputDialog("Insira o valor do saque"));
+
+        
+    }
+    
+
+
+
+
+
+
+
+
 
     
 }

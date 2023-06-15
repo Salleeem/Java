@@ -25,6 +25,7 @@ public class Main extends Conta {
                 clientePF[contPF].setSaldo(0);
                 clientePF[contPF].setNconta(1000 + contPF + 1);
                 int nConta = contPF + 1000 + 1;
+                JOptionPane.showMessageDialog(null, "Conta criada com sucesso!");
                 JOptionPane.showMessageDialog(null, "Seu número é " + nConta);
 
                 contPF++;
@@ -75,7 +76,11 @@ public class Main extends Conta {
                         double vEmprestimo = Integer
                                 .parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
                         if (vEmprestimo > 0 && vEmprestimo < 20000) {
+                            saldo += vEmprestimo;
+                            double vjuros = vEmprestimo / 10;
                             JOptionPane.showMessageDialog(null, "Seu empréstimo foi realizado com sucesso");
+                            JOptionPane.showMessageDialog(null, "Seu saldo atual é de " + saldo);
+                            JOptionPane.showMessageDialog(null, "O juros a ser pago é de " + vjuros);
                         } else {
                             JOptionPane.showMessageDialog(null, "Insira um valor válido para o empréstimo");
                         }
@@ -94,7 +99,7 @@ public class Main extends Conta {
                 clientepPj[contPJ].setNconta(2000 + contPJ + 1);
 
                 int nConta = contPJ + 1000;
-
+                JOptionPane.showMessageDialog(null, "Conta criada com sucesso!");
                 JOptionPane.showMessageDialog(null, "Seu número é " + nConta);
 
                 contPJ++;
@@ -148,6 +153,9 @@ public class Main extends Conta {
                         double vEmprestimo = Integer
                                 .parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
                         if (vEmprestimo > 0 && vEmprestimo < 50000) {
+                             double vjuros = vEmprestimo / 10;
+                             JOptionPane.showMessageDialog(null, "Seu saldo atual é de " + saldo);
+                            JOptionPane.showMessageDialog(null, "O juros a ser pago é de " + vjuros);
                             JOptionPane.showMessageDialog(null, "Seu empréstimo foi realizado com sucesso");
                         } else {
                             JOptionPane.showMessageDialog(null, "Insira um valor válido para o empréstimo");

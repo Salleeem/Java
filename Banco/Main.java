@@ -24,6 +24,8 @@ public class Main extends Conta {
                 clientePF[contPF].setnCPF(JOptionPane.showInputDialog("Informe o número do CPF do cliente"));
                 clientePF[contPF].setSaldo(0);
                 clientePF[contPF].setNconta(1000 + contPF + 1);
+                int nConta = contPF + 1000 + 1;
+                JOptionPane.showMessageDialog(null, "Seu número é " + nConta);
 
                 contPF++;
 
@@ -34,7 +36,7 @@ public class Main extends Conta {
                 for (i = 0; i < clientePF.length; i++) {
                     if (nFinderPF == clientePF[i].getNconta()) {
                         contaAtual = i;
-                        JOptionPane.showInputDialog("Cliente encontrado");
+                        JOptionPane.showMessageDialog(null, "Cliente encontrado");
                         break;
                     }
                 }
@@ -55,27 +57,28 @@ public class Main extends Conta {
 
                         if (saldo >= vSaque) {
                             saldo -= vSaque;
-                            JOptionPane.showInputDialog("Foram sacados: R$" + vSaque);
-                            JOptionPane.showInputDialog("Seu saldo atual é de: R$" + saldo);
+                            JOptionPane.showMessageDialog(null, "Foram sacados: R$" + vSaque);
+                            JOptionPane.showMessageDialog(null, "Seu saldo atual é de: R$" + saldo);
                         } else {
-                            JOptionPane.showInputDialog("Seu saldo é insuficiente, faça um depósito");
+                            JOptionPane.showMessageDialog(null, "Seu saldo é insuficiente, faça um depósito");
                         }
                     } else if (segundaEtapa == 3) {
                         double vDeposito = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor do depósito"));
 
                         saldo += vDeposito;
 
-                        JOptionPane.showInputDialog("Seu depósito foi concluído");
-                        JOptionPane.showInputDialog("Seu saldo atual é de: R$ " + saldo);
+                        JOptionPane.showMessageDialog(null, "Seu depósito foi concluído");
+                        JOptionPane.showMessageDialog(null, "Seu saldo atual é de: R$ " + saldo);
 
                     } else if (segundaEtapa == 4) {
-                        
-                        double vEmprestimo = Integer.parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
-                            if(vEmprestimo > 0 && vEmprestimo < 20000){
-                                JOptionPane.showInputDialog("Seu empréstimo foi realizado com sucesso");
-                            } else{
-                                JOptionPane.showInputDialog("Insira um valor válido para o empréstimo");
-                            }
+
+                        double vEmprestimo = Integer
+                                .parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
+                        if (vEmprestimo > 0 && vEmprestimo < 20000) {
+                            JOptionPane.showMessageDialog(null, "Seu empréstimo foi realizado com sucesso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Insira um valor válido para o empréstimo");
+                        }
                     }
 
                     else if (segundaEtapa == 5) {
@@ -89,6 +92,10 @@ public class Main extends Conta {
                 clientepPj[contPJ].setnCNPJ(JOptionPane.showInputDialog("Informe o número do CNPJ do cliente"));
                 clientepPj[contPJ].setSaldo(0);
                 clientepPj[contPJ].setNconta(2000 + contPJ + 1);
+
+                int nConta = contPJ + 1000;
+
+                JOptionPane.showMessageDialog(null, "Seu número é " + nConta);
 
                 contPJ++;
 
@@ -114,8 +121,8 @@ public class Main extends Conta {
                                     + "\n 3-Fazer depósito"
                                     + "\n 4-Fazer Empréstimo"
                                     + "\n 5-Sair da conta"));
-                
-                           if (segundaEtapa == 1) {
+
+                    if (segundaEtapa == 1) {
                         JOptionPane.showMessageDialog(null, clientePF[contaAtual].getSaldo());
                     } else if (segundaEtapa == 2) {
 
@@ -123,37 +130,40 @@ public class Main extends Conta {
 
                         if (saldo >= vSaque) {
                             saldo -= vSaque;
-                            JOptionPane.showInputDialog("Foram sacados: R$" + vSaque);
-                            JOptionPane.showInputDialog("Seu saldo atual é de: R$" + saldo);
+                            JOptionPane.showMessageDialog(null, "Foram sacados: R$" + vSaque);
+                            JOptionPane.showMessageDialog(null, "Seu saldo atual é de: R$" + saldo);
                         } else {
-                            JOptionPane.showInputDialog("Seu saldo é insuficiente, faça um depósito");
+                            JOptionPane.showMessageDialog(null, "Seu saldo é insuficiente, faça um depósito");
                         }
                     } else if (segundaEtapa == 3) {
                         double vDeposito = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor do depósito"));
 
                         saldo += vDeposito;
 
-                        JOptionPane.showInputDialog("Seu depósito foi concluído");
-                        JOptionPane.showInputDialog("Seu saldo atual é de: R$ " + saldo);
+                        JOptionPane.showMessageDialog(null, "Seu depósito foi concluído");
+                        JOptionPane.showMessageDialog(null, "Seu saldo atual é de: R$ " + saldo);
 
                     } else if (segundaEtapa == 4) {
-                        
-                        double vEmprestimo = Integer.parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
-                            if(vEmprestimo > 0 && vEmprestimo < 50000){
-                                JOptionPane.showInputDialog("Seu empréstimo foi realizado com sucesso");
-                            } else{
-                                JOptionPane.showInputDialog("Insira um valor válido para o empréstimo");
-                            }
+
+                        double vEmprestimo = Integer
+                                .parseInt((JOptionPane.showInputDialog("Insira o valor desejado para o empréstimo")));
+                        if (vEmprestimo > 0 && vEmprestimo < 50000) {
+                            JOptionPane.showMessageDialog(null, "Seu empréstimo foi realizado com sucesso");
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Insira um valor válido para o empréstimo");
+                        }
                     }
 
                     else if (segundaEtapa == 5) {
                         acessar = false;
                     }
                 }
+            } else if (action == 5) {
+                aberta = false;
             }
 
         }
 
-}
+    }
 
 }

@@ -98,7 +98,7 @@ public class Main extends Conta {
                 clientepPj[contPJ].setSaldo(0);
                 clientepPj[contPJ].setNconta(2000 + contPJ + 1);
 
-                int nConta = contPJ + 1000;
+                int nConta = contPJ + 2000 + 1;
                 JOptionPane.showMessageDialog(null, "Conta criada com sucesso!");
                 JOptionPane.showMessageDialog(null, "Seu número é " + nConta);
 

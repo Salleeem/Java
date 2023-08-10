@@ -28,11 +28,13 @@ public class App {
             gatin[contCat] = new Cat();
             gatin[contCat].setNome(JOptionPane.showInputDialog("Informe o nome do gatinho"));
             gatin[contCat].setPeso(Integer.parseInt(JOptionPane.showInputDialog("Informe o peso do gatinho")));
-            gatin[contCat].setPorte(JButton.BORDER_PAINTED_CHANGED_PROPERTY);
+            gatin[contCat].setPorte();
                 
             }
 
             if (action==2) {
+                doguin[contDog].setNome(JOptionPane.showInputDialog("Informe o nome do cachorrinho"));
+                doguin[contDog].setPeso(Integer.parseInt(JOptionPane.showInputDialog("Informe o peso do cachorrinho")));
             
 
 
